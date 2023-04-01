@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<script type="text/javascript">
-		$(function() {
-			$(document).ready(function(){
-				$('#upi')[0].click();
-			})
-		})
-	</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById("upi").click();
+    };
+  </script>
 </head>
 <body>
-	<a href="upi://pay?pa=9233205447@hdfcbank&pn=JEFFERSON%20LAKASHIANG&am=100&tn=Payment&cu=INR" id="upi">redirect</a>
+  <a href="upi://pay?pa=9233205447@hdfcbank&pn=JEFFERSON%20LAKASHIANG&am=100&tn=Payment&cu=INR" id="upi">redirect</a>
 </body>
 </html>
