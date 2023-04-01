@@ -2,20 +2,14 @@
 <html>
 <head>
 	<title>UPI Payment Demo</title>
-</head>
-<body>
-	<h1>UPI</h1>
-	<button id="makePaymentBtn">Make Payment</button>
-
 	<script>
 		function makePayment() {
 			var upiUrl = "upi://pay?pa=9233205447@hdfcbank&pn=JEFFERSON%20LAKASHIANG&am=100&tn=Payment&cu=INR";
 			window.location.href = upiUrl;
 		}
-
-		window.onload = function() {
-			document.getElementById("makePaymentBtn").click();
-		};
 	</script>
+</head>
+<body onload="makePayment()">
+	<h1>UPI Payment Demo</h1>
 </body>
 </html>
