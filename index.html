@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>upi</title>
-	<script type="text/javascript">
-		function redirect() {
-			window.location = "upi://pay?pa=9233205447@hdfcbank&pn=JEFFERSON LAKASHIANG&am=100&tn=Payment&cu=INR";
+	<title>UPI Payment Demo</title>
+</head>
+<body>
+	<h1>UPI Payment Demo</h1>
+	<button onclick="makePayment()">Make Payment</button>
+
+	<script>
+		function makePayment() {
+			var upiUrl = "upi://pay?pa=9233205447@hdfcbank&pn=JEFFERSON%20LAKASHIANG&am=100&tn=Payment&cu=INR";
+			window.location.href = upiUrl;
 		}
 	</script>
-</head>
-<body> 
-	<button onclick="redirect()">UPI Payment</button>
 </body>
 </html>
