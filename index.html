@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Auto-load UPI payment link</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<script type="text/javascript">
-		window.onload = function() {
-			document.getElementById("upiLink").click();
-		}
+		$(function() {
+			$(document).ready(function(){
+				$('#upi')[0].click();
+			})
+		})
 	</script>
 </head>
 <body>
-	<a id="upiLink" href="upi://pay?pa=9233205447@hdfcbank&pn=JEFFERSON%20LAKASHIANG&am=100&tn=Payment&cu=INR">Click here to make a UPI payment</a>
+	<a href="upi://pay?pa=9233205447@hdfcbank&pn=JEFFERSON%20LAKASHIANG&am=100&tn=Payment&cu=INR" id="upi">redirect</a>
 </body>
 </html>
